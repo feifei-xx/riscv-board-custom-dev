@@ -12,8 +12,8 @@
 
 - Lichee Pi 4A (16G RAM + 128G eMMC)
 	- 设备照片
-	- 设备型号截图![device-model](../images/device-model.png)
-	- 系统信息截图![device-cpuinfo](../images/device-cpuinfo.png)
+	- 设备型号截图![device-model](./images/device-model.png)
+	- 系统信息截图![device-cpuinfo](./images/device-cpuinfo.png)
 - USB-C 电源适配器 / DC 电源一个
 - USB-UART 调试器一个
 
@@ -53,7 +53,7 @@ sudo fastboot flash root root-lpi4a-20250728_180938.ext4
 #### 通过串口连接
 
 将开发板串口通过杜邦线与调试模块连接；红色圈内（从左往右第一排第二个）为GND，黄色圈内（第一排第五个）为TX，绿色圈内（第二排第五个）为RX。连接方式为：开发板GND->调试器GND，开发板TX->调试器RX，开发板RX->调试器TX
-![uart](../images/uart.png)
+![uart](./images/uart.png)
 
 #### 打开终端，使用 minicom 或 tio 连接串口
 
@@ -65,7 +65,7 @@ minicom -b 115200 -D /dev/ttyUSB0
 默认用户名：`debian`
 默认密码：`debian`
 ```
-![startup](../images/startup.png)
+![startup](./images/startup.png)
 重新给开发板上电，连接网口，等待开机
 ## 工具链测试
 
@@ -125,7 +125,7 @@ riscv64-plct-linux-gnu-gcc hello.c -o hello-gcc
 ./hello-gcc
 ```
 
-![gnu-hello](../images/gnu-hello.png)
+![gnu-hello](./images/gnu-hello.png)
 编译并运行coremark（GCC）
 
 ```
@@ -137,7 +137,7 @@ make CC=riscv64-plct-linux-gnu-gcc XCFLAGS="-mcpu=xt-c910" compile
 
 ./coremark.exe
 ```
-![gnu-coremark](../images/gnu-coremark.png)
+![gnu-coremark](./images/gnu-coremark.png)
 
 返回上级目录并退出ruyi GCC虚拟环境
 
@@ -165,7 +165,7 @@ clang -v
 clang hello.c -o hello-llvm; ./hello-llvm
 ```
 
-![llvm-hello](../images/llvm-hello.png)
+![llvm-hello](./images/llvm-hello.png)
 编译并运行coremark（LLVM）
 
 ```
@@ -177,7 +177,7 @@ xtheadcondmov_xtheadfmemidx_xtheadmac_xtheadmemidx_xtheadmempair_xtheadsync" co
 
 ./coremark.exe
 ```
-![llvm-coremark](../images/llvm-coremark.png)
+![llvm-coremark](./images/llvm-coremark.png)
 
 返回上级目录并退出ruyi GCC虚拟环境
 
@@ -185,9 +185,9 @@ xtheadcondmov_xtheadfmemidx_xtheadmac_xtheadmemidx_xtheadmempair_xtheadsync" co
 cd ..; ruyi-deactivate
 ```
 
-### 启动信息
+## 完整测试过程
 
-屏幕录制（从刷写镜像到登录系统）：
+[屏幕录制（全过程视频）](https://github.com/DuoQilai/riscv-board-custom-dev/blob/main/Licheepi4A/Licheepi4A.mp4)
 
 ## 预期结果
 
@@ -226,7 +226,6 @@ cd ..; ruyi-deactivate
     
 5. **测试流程完成情况**  
     所有测试步骤执行完成后，虚拟环境可正常退出，测试流程与操作步骤已通过截图与录屏方式记录，测试结果可追溯、可复查。
-
 
 ## 测试判定标准
 
