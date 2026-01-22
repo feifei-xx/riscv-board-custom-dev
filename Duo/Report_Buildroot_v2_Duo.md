@@ -1,4 +1,4 @@
-# RevyOS Duo 系统版本和工具链测试报告
+# Buildroot (v2) Milk-V Duo  系统版本和工具链测试报告
 
 ## 测试环境
 
@@ -45,9 +45,6 @@ Log:
 
 开发板GND->调试器GND，开发板TX->调试器RX，开发板RX->调试器TX，如图所示（图中开发板一侧线序从左到右依次为TX、RX、GND）
 ![uart](./images/uart.png)
-```bash
-minicom -D /dev/ttyACM0 -c on
-```
 
 #### 打开终端，使用 minicom 或 tio 连接串口
 
@@ -88,9 +85,9 @@ ruyi install gnu-plct llvm-plct
 ### GCC测试
 创建并激活ruyi虚拟环境（GCC）
 ```
-ruyi venv -t toolchain/gnu-plct manual venv-gnu-plct
+ruyi venv -t toolchain/gnu-plct milkv-duo venv-gnu-plct-duo
 
-. ~/venv-gnu-plct/bin/ruyi-activate
+. ~/venv-gnu-plct-duo/bin/ruyi-activate
 ```
 
 验证GCC版本
@@ -99,7 +96,7 @@ ruyi venv -t toolchain/gnu-plct manual venv-gnu-plct
 riscv64-plct-linux-gnu-gcc -v
 ```
 
-编译并运行Hello World（GCC）
+编译Hello World（GCC）
 
 ```
 cat << EOF > hello.c
@@ -118,22 +115,25 @@ EOF
 
 riscv64-plct-linux-gnu-gcc hello.c -o hello-gcc
 
-./hello-gcc
 ```
 
-![gnu-hello](./images/gnu-hello.png)
-编译并运行coremark（GCC）
+编译coremark（GCC）
 
 ```
 git clone https://github.com/eembc/coremark
 
 cd coremark
 
-make CC=riscv64-plct-linux-gnu-gcc XCFLAGS="-mcpu=xt-c910" compile
+make CC=riscv64-plct-linux-gnu-gcc XCFLAGS="-mcpu=thead-c906 -static" compile
 
-./coremark.exe
+mv coremark.exe coremark-gcc
 ```
-![gnu-coremark](./images/gnu-coremark.png)
+
+将GCC构建的二进制传输至开发板
+
+```
+scp ../hello-gcc coremark-gcc root@192.168.42.1:~
+```
 
 返回上级目录并退出ruyi GCC虚拟环境
 
@@ -155,25 +155,28 @@ ruyi venv -t toolchain/llvm-plct manual --sysroot-from gnu-plct venv-llvm-plct
 clang -v
 ```
 
-编译并运行Hello World（LLVM）
+编译 Hello World（LLVM）
 
 ```
-clang hello.c -o hello-llvm; ./hello-llvm
+clang hello.c -o hello-llvm; 
 ```
 
-![llvm-hello](./images/llvm-hello.png)
-编译并运行coremark（LLVM）
+编译 coremark（LLVM）
 
 ```
-cd coremark; make clean; make CC=clang XCFLAGS="-march=rv64imafdc_zicntr_zicsr_zifencei_zihpm_zfh_\
+cd coremark; make clean
 
-xtheadba_xtheadbb_xtheadbs_xtheadcmo_\
+make CC=clang XCFLAGS="-march=rv64imafdc_xtheadba_xtheadbb_xtheadbs_xtheadcmo_\
 
-xtheadcondmov_xtheadfmemidx_xtheadmac_xtheadmemidx_xtheadmempair_xtheadsync" compile
+xtheadcondmov_xtheadfmemidx_xtheadmac_xtheadmemidx_xtheadmempair_xtheadsync -static" compile
 
-./coremark.exe
+mv coremark.exe coremark-llvm
 ```
-![llvm-coremark](./images/llvm-coremark.png)
+
+将LLVM构建的二进制传输到开发板
+```
+scp ../hello-llvm coremark-llvm root@192.168.42.1:~
+```
 
 返回上级目录并退出ruyi GCC虚拟环境
 
@@ -181,6 +184,32 @@ xtheadcondmov_xtheadfmemidx_xtheadmac_xtheadmemidx_xtheadmempair_xtheadsync" co
 cd ..; ruyi-deactivate
 ```
 
+SSH连接到开发板并执行编译好的二进制
+
+```
+ssh root@192.168.42.1
+
+#如提示Host key verification failed：
+
+#打开当前用户目录下的 .ssh/known_hosts目录，删除192.168.42.1对应行
+
+#登录密码为milkv，提示Are you sure you want to continue connecting时输入yes回车即可
+
+./hello-gcc
+```
+![gnu-hello](./images/gnu-hello.png)
+```
+./hello-llvm
+```
+![llvm-hello](./images/llvm-hello.png)
+```
+./coremark-gcc
+```
+![gnu-coremark](./images/gnu-coremark.png)
+```
+./coremark-llvm
+```
+![llvm-coremark](./images/llvm-coremark.png)
 ## 完整测试过程
 
 屏幕录制

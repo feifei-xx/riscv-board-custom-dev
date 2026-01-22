@@ -13,30 +13,35 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Licheepi4A/Report_RevyOS_LPi4A.md",
+                "file": "Duo/Report_Buildroot_v2_Duo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Report_RevyOS_LPi4A"
+              "title": "Report_Buildroot_v2_Duo"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "cf02775a62100443",
+        "type": "tabs",
+        "children": [
           {
-            "id": "ec9f3aa6c0f0bf77",
+            "id": "a672585fe0ca7d09",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Duo/Report_RevyOS_Duo.md",
+                "file": "Duo/Report_Buildroot_v2_Duo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Report_RevyOS_Duo"
+              "title": "Report_Buildroot_v2_Duo"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -69,7 +74,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -93,7 +98,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 250.5
   },
   "right": {
     "id": "f68ec90352f57567",
@@ -171,13 +176,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "meles/Report_RevyOS_meles.md",
+                "file": "Duo/Report_Buildroot_v2_Duo.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Report_RevyOS_meles 的大纲"
+              "title": "Report_Buildroot_v2_Duo 的大纲"
             }
           }
         ],
@@ -185,8 +190,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 279.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -199,35 +203,46 @@
       "bases:新建数据库": false
     }
   },
-  "active": "ec9f3aa6c0f0bf77",
+  "active": "a672585fe0ca7d09",
   "lastOpenFiles": [
-    "Licheepi4A/Report_RevyOS_LPi4A.md",
-    "Meles/Report_RevyOS_Meles.md",
-    "Duo/Report_RevyOS_Duo.md",
-    "Duo/images/startup.png",
-    "Duo/images/c6508e9a-564f-49b8-ae62-8a86691a9fd6.png",
-    "Duo/images/uart.png",
-    "Duo/images/d5c7f326-e0dc-4abf-b6c7-5736b3e59ebb.png",
-    "Duo/images/llvm-hello.png",
-    "Duo/images/marker.png",
-    "Duo/images/llvm-coremark.png",
-    "Duo/images/gnu-hello.png",
-    "Duo/images/gnu-coremark.png",
-    "Duo/images/device-model.png",
-    "Duo/images",
-    "Duo/03-duo",
-    "Duo",
-    "未命名文件夹",
-    "Licheepi4A/index_tutorial_LPi4A.md",
-    "Licheepi4A/boot_LPi4A.md",
-    "Meles/images",
-    "meles/03-meles",
-    "Meles",
-    "未命名文件夹/03-meles",
-    "Licheepi4A/Licheepi4A.mp4",
-    "README.md",
-    "cast/upload_results.txt",
+    "Duo_S/Report_Debian_Duo_S.md",
+    "Duo_256m/Report_Buildroot_v2_Duo_256m.md",
+    "Duo/Report_Buildroot_v2_Duo.md",
     "report-template/README_zh.md",
+    "Duo/overview_Duo.md",
+    "Licheepi4A/boot_LPi4A.md",
+    "Licheepi4A/index_tutorial_LPi4A.md",
+    "Duo/index_tutorial_Duo.md",
+    "Licheepi4A/Report_RevyOS_LPi4A.md",
+    "LicheeRV_Nano/Report_Debian_LPiNano.md",
+    "Duo/application-development_Duo.md",
+    "Duo/Library-Support_Duo.md",
+    "Duo/HelloWorld_Duo.md",
+    "Duo/Coremark_Duo.md",
+    "Duo/boot_Duo.md",
+    "Duo/images/lcm1602wave.png",
+    "Duo/images/lcm1602.jpg",
+    "Duo/images/ssd1306wave.png",
+    "Duo/images/ssd1306.jpg",
+    "Duo/images/PWM.png",
+    "Duo/images/duo.png",
+    "Duo/images/26c956b5-c0e8-4cb3-ac9b-0232c36c2872.png",
+    "Pioneer/Report_Debian_LPiNano 1.md",
+    "Pioneer/images/llvm-hello-run.png",
+    "Pioneer/images/llvm-hello-compile.png",
+    "Pioneer/images/llvm-coremark-run.png",
+    "Pioneer/images",
+    "Pioneer/08-pioneer",
+    "Pioneer",
+    "未命名文件夹",
+    "LicheeRV_Nano/images",
+    "LicheeRV_Nano/07-nano",
+    "LicheeRV_Nano",
+    "Duo_S/images",
+    "Duo_S/06-duos",
+    "Duo_S",
+    "Meles/Report_RevyOS_Meles.md",
+    "README.md",
     "report-template/[board-name]/[os-name]/README_zh.md",
     "report-template/[board-name]/[os-name]/README.md",
     "report-template/[board-name]/README_zh.md",

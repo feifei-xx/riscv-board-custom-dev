@@ -1,6 +1,6 @@
-# LicheePi 4A x RuyiSDK 极速开发指南
+# Milk-V Duo x RuyiSDK 极速开发指南
 
-## 1.  LicheePi 4A概述
+## 1.  Milk-V Duo 概述
 
 - 概述
 - 硬件规格（处理器、内存、存储、接口、电源）
@@ -8,7 +8,7 @@
 ## 2. 环境准备
 
 ### 2.1 系统准备
-- 烧录 RevyOS 镜像
+- 烧录 Buildroot 镜像
 - 串口 / SSH 登录
 
 ### 2.2 RuyiSDK 环境初始化
