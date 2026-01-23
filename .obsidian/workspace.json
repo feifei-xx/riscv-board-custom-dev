@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "b4af6391498d09e0",
+    "id": "26186600fc5f9d4f",
     "type": "split",
     "children": [
       {
-        "id": "48b4100961bc9cad",
+        "id": "44ad948683976521",
         "type": "tabs",
         "children": [
           {
-            "id": "c5e65f1bf483ed97",
+            "id": "0ae51c385dd936c1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Licheepi4A/README_zh.md",
+                "file": "Licheepi4A/Report_RevyOS_LPi4A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README_zh"
+              "title": "Report_RevyOS_LPi4A"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "0bd1c5cc5fbdff60",
+    "id": "3dcb4d628aa11df5",
     "type": "split",
     "children": [
       {
-        "id": "04bf2ffd735c892c",
+        "id": "4a7d411a586f28c5",
         "type": "tabs",
         "children": [
           {
-            "id": "1871f8495afb0456",
+            "id": "52430ca5e52d27c2",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,13 +48,13 @@
             }
           },
           {
-            "id": "e8ed5016e1211c54",
+            "id": "3e573f80af20dc9e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "77f8cb6d80d199c3",
+            "id": "6f1af9cdff055947",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,23 +78,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 250.5
   },
   "right": {
-    "id": "f68ec90352f57567",
+    "id": "4687920d8e9c0ee1",
     "type": "split",
     "children": [
       {
-        "id": "9ab9a2e246b579de",
+        "id": "77202ebe1de6fe87",
         "type": "tabs",
         "children": [
           {
-            "id": "6e78edfff8de62f2",
+            "id": "13bb9017c091acd5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Licheepi4A/README_zh.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,25 +103,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "README_zh 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "292fec768a809118",
+            "id": "a40d311b165b611e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Licheepi4A/README_zh.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "README_zh 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "2f86a0f26593be2b",
+            "id": "5730a2a6d94dd03d",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -137,7 +135,7 @@
             }
           },
           {
-            "id": "7e181dec09bfb8b2",
+            "id": "2787a80470d99464",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -151,26 +149,25 @@
             }
           },
           {
-            "id": "0321c99c1cf3903c",
+            "id": "5e3e418acce6e116",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Licheepi4A/README_zh.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README_zh 的大纲"
+              "title": "大纲"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,28 +180,41 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0321c99c1cf3903c",
+  "active": "0ae51c385dd936c1",
   "lastOpenFiles": [
-    "Licheepi4A.mp4",
-    "Licheepi4A/images/startup.png",
-    "Licheepi4A/README_zh.md",
-    "Licheepi4A/images/图像.png",
-    "Licheepi4A/images/A.jpg",
-    "Licheepi4A/A.jpg",
-    "Licheepi4A/images/device-model.png",
-    "Pasted image 20260119184459.png",
-    "Licheepi4A/images/uart.png",
-    "Licheepi4A/images/gnu-hello.png",
-    "Licheepi4A/images/device-cpuinfo.png",
-    "Licheepi4A/images/gnu-coremark.png",
-    "README.md",
-    "Licheepi4A/Licheepi4A.mp4",
-    "Licheepi4A/images",
-    "Licheepi4A",
-    "未命名文件夹",
-    "xiangshan/01-xiangshan.mp4",
-    "xiangshan/01-xiangshan",
-    "xiangshan",
-    "未命名"
+    "Pioneer/images/llvm-hello-run.png",
+    "Pioneer/images/llvm-hello-compile.png",
+    "Pioneer/images/llvm-coremark-run.png",
+    "Pioneer/images/llvm-coremark-compile.png",
+    "Pioneer/images/gnu-hello-run.png",
+    "Pioneer/images/gnu-hello-compile.png",
+    "Pioneer/images/gnu-coremark-run.png",
+    "Pioneer/images/gnu-coremark-compile.png",
+    "Pioneer/images/device-model.png",
+    "Pioneer/images/device-cpuinfo.png",
+    "Pioneer/images",
+    "Pioneer",
+    "LicheeRV_Nano/images/startup.png",
+    "LicheeRV_Nano/images",
+    "LicheeRV_Nano/Report_Debian_LPiNano.md",
+    "LicheeRV_Nano",
+    "Duo_S/images",
+    "Duo_S/Report_Debian_Duo_S.md",
+    "Duo_S",
+    "Duo_256m/images",
+    "Duo_256m/Report_Buildroot_v2_Duo_256m.md",
+    "Duo_256m",
+    "Duo/overview_Duo.md",
+    "Duo/index_tutorial_Duo.md",
+    "Duo/boot_Duo.md",
+    "Duo/application-development_Duo.md",
+    "Duo/Report_Buildroot_v2_Duo.md",
+    "Duo/Library-Support_Duo.md",
+    "Duo/HelloWorld_Duo.md",
+    "Duo/Coremark_Duo.md",
+    "Licheepi4A/boot_LPi4A.md",
+    "Duo/Report_RevyOS_Duo.md",
+    "Duo/images",
+    "Duo"
   ]
 }
