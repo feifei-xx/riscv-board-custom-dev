@@ -10,7 +10,7 @@
 
 ### 硬件信息
 
--香山笔记本（Xiangshan Nanhu）
+- 香山笔记本（Xiangshan Nanhu）
    - 设备照片
    - 设备型号截图![device-model](./images/device-model.png)
    - 系统信息截图![device-cpuinfo](./images/device-cpuinfo.png)
@@ -253,5 +253,6 @@ SSH连接到开发板并执行编译好的二进制
 测试失败：实际结果与预期结果不符。
 
 ## 测试结论
+
 
 测试成功。
