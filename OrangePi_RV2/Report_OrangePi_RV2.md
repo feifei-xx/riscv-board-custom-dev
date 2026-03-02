@@ -1,4 +1,4 @@
-# Orange Pi 1.0.0 Noble OrangePi_RV2  系统版本和工具链测试报告
+# Orange Pi 1.0.0 Noble  OrangePi_RV2  系统版本和工具链测试报告
 
 ## 测试环境
 
@@ -248,3 +248,4 @@ SSH连接到开发板并执行编译好的二进制
 
 
 测试成功。
+
