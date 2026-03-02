@@ -1,4 +1,4 @@
-# 香山笔记本（Xiangshan Nanhu）  系统版本和工具链测试报告
+# Debian GNU/Linux 香山笔记本（Xiangshan Nanhu）  系统版本和工具链测试报告
 
 ## 测试环境
 
@@ -256,3 +256,4 @@ SSH连接到开发板并执行编译好的二进制
 
 
 测试成功。
+
