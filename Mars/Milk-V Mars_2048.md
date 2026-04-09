@@ -21,7 +21,7 @@
 cd ~/mars-venv
 source ./bin/ruyi-activate
 ```
-![激活环境截图]([https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/1.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/2.png))
+![激活环境截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/2.png)
 
 ### 3.2 获取源码并编译
 创建项目专属目录，下载纯 C 语言无依赖的 2048 源码，并调用交叉编译器进行编译：
