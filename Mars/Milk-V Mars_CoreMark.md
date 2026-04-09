@@ -22,8 +22,8 @@ ruyi update
 ruyi install gnu-plct
 ```
 
-![安装工具链截图]([./images/1.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/1.png))
-![]([./images/2.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/2.png))
+![安装工具链截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/1.png)
+![](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/2.png)
 
 #### 创建并激活 Ruyi 虚拟环境
 
@@ -40,7 +40,7 @@ cd mars-venv
 source ./bin/ruyi-activate
 ```
 
-![激活环境截图]([./images/3.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/3.png))
+![激活环境截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/3.png)
 
 #### 验证交叉编译器版本
 
@@ -77,7 +77,7 @@ cd coremark
 make PORT_DIR=linux CC=riscv64-plct-linux-gnu-gcc compile
 ```
 
-![编译过程截图]([./images/4.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/4.png))
+![编译过程截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/4.png)
 
 ### 验证编译产物
 
@@ -90,7 +90,7 @@ file coremark.exe
 
 
 
-![编译结果截图]([./images/5.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/5.png))
+![编译结果截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/CoreMark/images/5.png)
 
 ## 三、 运行 CoreMark 基准测试
 
