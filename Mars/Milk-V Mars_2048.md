@@ -21,7 +21,7 @@
 cd ~/mars-venv
 source ./bin/ruyi-activate
 ```
-![激活环境截图](./images/2.png)
+![激活环境截图]([https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/1.png](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/2.png))
 
 ### 3.2 获取源码并编译
 创建项目专属目录，下载纯 C 语言无依赖的 2048 源码，并调用交叉编译器进行编译：
@@ -37,7 +37,7 @@ wget [https://raw.githubusercontent.com/mevdschee/2048.c/master/2048.c](https://
 riscv64-plct-linux-gnu-gcc 2048.c -o 2048_riscv
 ```
 
-![编译结果截图](./images/1.png)
+![编译结果截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/1.png)
 
 ### 3.3 物理转移程序 (宿主机操作)
 1. 在 WSL 终端执行 `explorer.exe .` 直接在 Windows 资源管理器中打开当前编译目录。
@@ -83,7 +83,7 @@ chmod +x 2048_riscv
 ./2048_riscv
 ```
 
-![游戏运行画面截图](./images/3.png)
+![游戏运行画面截图](https://github.com/feifei-xx/plct-works/blob/main/%E5%90%84%E7%A7%8D/2048/images/3.png)
 
 * **操作方式**：使用键盘方向键（或 `W、A、S、D`）合并数字。
 * **退出方式**：按下 `q` 键退出游戏并返回终端界面。
